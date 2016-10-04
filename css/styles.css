@@ -1,0 +1,81 @@
+body {
+    background: url('../img/background.jpg') no-repeat fixed;
+    background-size: 100% 100%;
+}
+
+#mainDiv {
+    background-color: rgba(0,0,128,0.7);
+    border: 2px solid white;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    color: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.sections {
+    align-content: center;
+}
+
+#formSection {
+    display: block;
+    text-align: center;
+}
+
+.entry-group {
+    padding: 10px;
+    display: inline-block;
+    text-align: left;
+}
+
+.error {
+    color: red;   
+}
+
+.buttons {
+    background-color: #000080;
+    color : #FFFFFF;
+    border : 1px solid #FFFFFF;
+    padding: 8px;
+    border-radius : 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nameWrapper, #classWrapper, #numberWrapper {
+    display: block;
+}
+
+#topImage {
+    height: 12%;
+    width: 12%;
+    padding-top: 10px;
+}
+
+.sections {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+
+}
+
+#topTitle {
+    display: inline-block;
+    align-self : center;
+    font-size: xx-large; 
+    /*
+    Probably a bad idea to use this but em, rem, % were not responding
+     */
+    
+}
+
+#topPhoto {
+    padding-left : 15%;
+    padding-right : 25%;
+    display: inline-block;
+}
+
+span.form-titles {
+    margin-bottom : 10px;
+    padding-top: 10px;
+}
