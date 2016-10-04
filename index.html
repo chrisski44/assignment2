@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="CS1520 Assignment 2">
+  <meta name="author" content="Chris Skowronski">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>
+    Assignment 2 Form Submission   
+  </title>
+</head>
+
+<body>
+  <div id="mainDiv">
+  <header class="sections" id="topPhoto"> <!-- Wasn't sure if header or section was semantically correct here -->
+    <img id="topImage" src="img/Pitt Logo.jpeg.png"/>
+    <p id="topTitle"> University of Pittsburgh Computer Science </p>
+  </header>
+  <section class="sections" id="description">
+  <div id="paragraph">
+    <p>
+      In order to get a better idea of some of my classmates...and because I couldn't think of anything more creative
+      , I decided to create a student survey. I want them to provide things like their class standing, classes they have 
+      taken before, and their favorite color (because I found that input type on W3schools and couldn't pass up probably
+      the only time I'll ever put a color picker into a form).
+    </p>
+  </div>
+  </section>
+  <section class="sections" id="formSection">
+    <h2>Tell Me More About Yourself...Student Survey!</h2>
+    <hr>
+    <form class="survey" name="testForm" onsubmit="return formValidation()" >
+      <div id="nameWrapper">
+      <div id="nameDiv" class="entry-group">
+        <span class="form-titles"> Name: </span> <br>
+        <input id="nameInput" type="text" name="namebox" onClick="return resetNameForm()"> <br>
+        <div class="error" id="errorName">
+        </div>
+      </div>
+      <div id="numberDiv" class="entry-group"> 
+        <span class="form-titles"> Pick your favorite color: </span> <br>
+        <input type="color" name="favoritecolor"> <br>
+      </div>
+      </div>
+      <div id="classWrapper">
+        <div id="classDiv" class="entry-group">
+          <span class="form-titles">Select the classes you have taken: </span> <br>
+          <input type="checkbox" name="classes" value="CS1550"> CS1550 <br>
+          <input type="checkbox" name="classes" value="CS1555"> CS1555 <br>
+          <input type="checkbox" name="classes" value="CS1510"> CS1510 <br>
+          <input type="checkbox" name="classes" value="CS1530"> CS1530 <br>
+          <input type="checkbox" name="classes" value="CS1630"> CS1630 <br>
+        </div>
+        <div id="yearDiv" class="entry-group">
+          <span class="form-titles">Class Year: </span> <br>
+          <input type="radio" name="year" value="Senior" checked> Senior <br>
+          <input type="radio" name="year" value="Junior"> Junior <br>
+          <input type="radio" name="year" value="Sophomore"> Sophomore <br>
+          <input type="radio" name="year" value="Freshman"> Freshman <br>
+          <input type="radio" name="year" value="Other"> Other <br>
+        </div>
+      </div>
+      <div id="numberWrapper">
+        <div id="numberDiv" class="entry-group">
+          <span class="form-titles"> Pick your favorite number between 1 and 100 : </span> <br>
+          <input id="numberBox" type="number" name="favoriteNumber" onClick="return resetNumForm()"> <br>
+          <div class="error" id="errorNumber">
+          </div>
+        </div>
+       </div>
+        <div class="entry-group">
+          <div id="formSuccess">
+          </div>
+          <input class="buttons" id="submitButton" type="submit" value="Submission">
+          <input class="buttons" id="resetButton" type="reset">
+        </div>
+      </div>
+    </form>
+  </section>
+  </div>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
