@@ -24,11 +24,10 @@ function formValidation() {
 
     //If both cases are valid, then the form will submit after alert and reset
     if (submission == true) {
-        document.getElementById('errorNumber').innerHTML = "";
-        document.getElementById('numberBox').style.border = "1px solid black";
-        document.getElementById('nameInput').style.border = "1px solid black";
-        document.getElementById('errorName').innerHTML = "";
-        alert("Form was submitted successfully");
+        document.getElementById('description').innerHTML = "";
+        document.getElementById('formSection').innerHTML = "Your entry was submitted successfully. Thank you!";
+        document.getElementById('formSection').style.fontSize = "25px";
+        document.getElementById('formSection').style.paddingBottom = "50px";
     }
     return submission;
 }
@@ -40,5 +39,5 @@ function resetNameForm() {
 
 function resetNumForm() {
     document.getElementById('errorNumber').innerHTML = "";
-        document.getElementById('numberBox').style.border = "1px solid black";
+    document.getElementById('numberBox').style.border = "1px solid black";
 }
